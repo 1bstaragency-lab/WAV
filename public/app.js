@@ -4,7 +4,7 @@ document.querySelectorAll('.track[data-video]').forEach(track=>{
   const name=document.createElement('span');name.className='track-name';
   name.append(...art.childNodes);
   const thumbnail=document.createElement('img');thumbnail.className='track-thumbnail';
-  thumbnail.src=`https://i.ytimg.com/vi/${track.dataset.video}/mqdefault.jpg`;
+  thumbnail.src=`assets/thumbnails/${track.dataset.video}.jpg`;
   thumbnail.alt='';thumbnail.loading='lazy';thumbnail.decoding='async';
   art.replaceChildren(thumbnail,name);
 });
